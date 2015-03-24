@@ -17,20 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the question you seek?" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="yHw-jP-GF4">
-                                <rect key="frame" x="54" y="72" width="492" height="43"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="360" id="A6I-O5-EW9"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="A6I-O5-EW9"/>
-                                    </mask>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeF-p0-crx">
                                 <rect key="frame" x="255" y="247" width="86" height="30"/>
                                 <state key="normal" title="Golden Bear">
@@ -58,21 +44,49 @@
                                     <segue destination="Hrc-lR-szH" kind="showDetail" identifier="happy" id="urZ-HA-Yea"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qip-T7-BbC">
+                                <rect key="frame" x="271" y="361" width="54" height="30"/>
+                                <state key="normal" title="Nothing">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nothing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="abC-Vb-nZV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the question you seek?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yHw-jP-GF4">
+                                <rect key="frame" x="16" y="72" width="568" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="yHw-jP-GF4" secondAttribute="trailing" constant="38" id="ITn-QW-wHs"/>
-                            <constraint firstItem="yHw-jP-GF4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Jxg-v1-TPP"/>
-                            <constraint firstItem="FVZ-0x-aGL" firstAttribute="centerX" secondItem="yHw-jP-GF4" secondAttribute="centerX" id="KJL-2W-RAs"/>
+                            <constraint firstItem="yHw-jP-GF4" firstAttribute="centerX" secondItem="FVZ-0x-aGL" secondAttribute="centerX" id="0Z5-Cv-uwd"/>
+                            <constraint firstItem="qip-T7-BbC" firstAttribute="top" secondItem="qsO-tl-KcW" secondAttribute="bottom" constant="8" symbolic="YES" id="4v2-DO-EEv"/>
+                            <constraint firstItem="FVZ-0x-aGL" firstAttribute="centerX" secondItem="yHw-jP-GF4" secondAttribute="centerX" id="7Lz-Tg-KlU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yHw-jP-GF4" secondAttribute="trailing" id="Mvy-yc-X6p"/>
                             <constraint firstItem="FVZ-0x-aGL" firstAttribute="top" secondItem="XeF-p0-crx" secondAttribute="bottom" constant="8" symbolic="YES" id="Qm7-Q8-bda"/>
-                            <constraint firstItem="yHw-jP-GF4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="38" id="a9Q-1g-7jt"/>
+                            <constraint firstItem="yHw-jP-GF4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TQd-ni-kED"/>
+                            <constraint firstItem="qip-T7-BbC" firstAttribute="centerX" secondItem="qsO-tl-KcW" secondAttribute="centerX" id="TdY-cN-v5U"/>
                             <constraint firstItem="qsO-tl-KcW" firstAttribute="centerX" secondItem="XeF-p0-crx" secondAttribute="centerX" id="cF1-89-Val"/>
                             <constraint firstItem="FVZ-0x-aGL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hfz-Fz-sCf"/>
+                            <constraint firstItem="yHw-jP-GF4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="kgn-2h-Z5C"/>
                             <constraint firstItem="FVZ-0x-aGL" firstAttribute="leading" secondItem="XeF-p0-crx" secondAttribute="leading" id="qEb-Nl-Qb2"/>
                             <constraint firstItem="qsO-tl-KcW" firstAttribute="top" secondItem="FVZ-0x-aGL" secondAttribute="bottom" constant="8" symbolic="YES" id="s1N-yN-dL4"/>
+                            <constraint firstItem="yHw-jP-GF4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xFl-VJ-6fp"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0Z5-Cv-uwd"/>
+                                <exclude reference="TQd-ni-kED"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Psychologist" id="y7S-MB-Zhc"/>
+                    <connections>
+                        <segue destination="Hrc-lR-szH" kind="showDetail" identifier="nothing" id="LlQ-CI-MVD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="-334" y="720"/>
         </scene>
-        <!--Happiness View Controller-->
+        <!--Diagnosed Happiness View Controller-->
         <scene sceneID="BHA-qi-pXB">
             <objects>
-                <viewController id="C4o-Wb-N6P" customClass="HappinessViewController" customModule="Psychologist" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="C4o-Wb-N6P" customClass="DiagnosedHappinessViewController" customModule="Psychologist" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RQS-XE-mH4"/>
                         <viewControllerLayoutGuide type="bottom" id="4Xh-Fz-8XL"/>
@@ -131,7 +145,15 @@
                             <constraint firstItem="amN-pR-hah" firstAttribute="bottom" secondItem="4Xh-Fz-8XL" secondAttribute="top" id="wMA-45-lJZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="5xg-zU-Ngx"/>
+                    <navigationItem key="navigationItem" id="5xg-zU-Ngx">
+                        <barButtonItem key="rightBarButtonItem" title="History" id="AVr-Tx-Aq6">
+                            <connections>
+                                <segue destination="Vib-44-9rX" kind="popoverPresentation" identifier="Show Diagnostic History" popoverAnchorBarButtonItem="AVr-Tx-Aq6" id="nhG-RX-SOz">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="faceView" destination="amN-pR-hah" id="4BH-5U-eeP"/>
                     </connections>
@@ -144,6 +166,42 @@
                 </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2512" y="1233"/>
+        </scene>
+        <!--Text View Controller-->
+        <scene sceneID="kYh-ST-cAc">
+            <objects>
+                <viewController id="Vib-44-9rX" customClass="TextViewController" customModule="Psychologist" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H9G-qM-jUm"/>
+                        <viewControllerLayoutGuide type="bottom" id="7wI-ts-Mfd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fji-QO-TyW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="po2-jx-Jmw">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="po2-jx-Jmw" firstAttribute="leading" secondItem="Fji-QO-TyW" secondAttribute="leading" id="GVd-OV-yNR"/>
+                            <constraint firstItem="po2-jx-Jmw" firstAttribute="top" secondItem="Fji-QO-TyW" secondAttribute="top" id="PXS-T4-VPa"/>
+                            <constraint firstAttribute="trailing" secondItem="po2-jx-Jmw" secondAttribute="trailing" id="q36-u4-QWQ"/>
+                            <constraint firstItem="po2-jx-Jmw" firstAttribute="bottom" secondItem="7wI-ts-Mfd" secondAttribute="top" id="sY5-PA-eUl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="po2-jx-Jmw" id="gz0-bu-94n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cSO-fZ-NZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3202" y="1057"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ywz-Ts-iEe">
@@ -183,6 +241,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="urZ-HA-Yea"/>
+        <segue reference="LlQ-CI-MVD"/>
     </inferredMetricsTieBreakers>
 </document>
